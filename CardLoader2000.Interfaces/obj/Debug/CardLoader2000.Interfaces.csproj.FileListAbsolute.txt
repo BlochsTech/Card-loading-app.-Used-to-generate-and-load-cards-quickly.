@@ -1,0 +1,11 @@
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.Interfaces\bin\Debug\CardLoader2000.Interfaces.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.Interfaces\bin\Debug\CardLoader2000.Interfaces.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.Interfaces\obj\Debug\CardLoader2000.Interfaces.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.Interfaces\obj\Debug\CardLoader2000.Interfaces.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.Interfaces\obj\Debug\CardLoader2000.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.Interfaces\bin\Debug\CardLoader2000.Interfaces.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.Interfaces\bin\Debug\CardLoader2000.Interfaces.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.Interfaces\obj\Debug\CardLoader2000.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.Interfaces\obj\Debug\CardLoader2000.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.Interfaces\obj\Debug\CardLoader2000.Interfaces.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.Interfaces\obj\Debug\CardLoader2000.Interfaces.pdb

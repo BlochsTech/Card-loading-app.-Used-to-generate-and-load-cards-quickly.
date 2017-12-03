@@ -1,0 +1,17 @@
+[BasicCard]
+ConfigFile=Pro\ZC75_D.zcf
+
+[Card Reader]
+PhysicalReader=100
+VirtualReader=201
+
+[Compiler]
+ImageFile=true
+IncludePath=C:\Users\martin clemens bloch\Dropbox\Hobby stuff\75Branch
+ListingFile=false
+MapFile=false
+SourceFile=BitcoinCard.BAS
+
+[Window Options]
+IOToolTipEnabled=true
+ShowRegisters=Auto

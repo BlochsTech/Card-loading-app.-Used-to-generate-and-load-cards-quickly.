@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4077187C-5517-428D-8E73-223FE202C481}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CardLoader2000.LoadProcessors</RootNamespace>
+    <AssemblyName>CardLoader2000.LoadProcessors</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleRandomLoader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardLoader2000.CardLoadingLibrary\CardLoader2000.CardLoadingLibrary.csproj">
+      <Project>{52a3a468-1089-4d3a-a512-0583ea348e99}</Project>
+      <Name>CardLoader2000.CardLoadingLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardLoader2000.CryptoLibrary\CardLoader2000.CryptoLibrary.csproj">
+      <Project>{c7e5e3b8-a024-4df3-b1dc-78e233a25262}</Project>
+      <Name>CardLoader2000.CryptoLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardLoader2000.DAL\CardLoader2000.DAL.csproj">
+      <Project>{72404186-d2b6-4528-9b36-b44cd04fd420}</Project>
+      <Name>CardLoader2000.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardLoader2000.Interfaces\CardLoader2000.Interfaces.csproj">
+      <Project>{9bc97149-515d-45ee-9946-f20808372686}</Project>
+      <Name>CardLoader2000.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardLoader2000.PrintLibrary\CardLoader2000.PrintLibrary.csproj">
+      <Project>{3DA238BD-71E8-4673-91AA-D26D7AE40B33}</Project>
+      <Name>CardLoader2000.PrintLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

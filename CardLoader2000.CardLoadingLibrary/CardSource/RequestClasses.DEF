@@ -1,0 +1,6 @@
+Type TrustInfo
+   Rem Bitcoin hash160 address to be trusted or not.
+   Address as String*20
+   Rem Must be 2. Counted up from 0 to 2. (Becomes top ranked trusted after second payment completion)
+   Verified as Byte
+End Type

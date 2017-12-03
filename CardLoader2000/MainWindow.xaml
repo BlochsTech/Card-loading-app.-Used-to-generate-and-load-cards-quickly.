@@ -1,0 +1,32 @@
+﻿<Window x:Class="CardLoader2000.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Card loader 2000" Height="800" Width="1280">
+    <Grid>
+        <Label Content="Card loader 2000" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="275"/>
+        <Button x:Name="LoadButton" Content="Load card and print!" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="76,521,0,0" VerticalAlignment="Top" Width="358" Height="148" Click="LoadButton_Click"/>
+        <Label x:Name="ErrorLabel" Content="Click the button to start loading cards." HorizontalAlignment="Left" FontSize="16" Foreground="DarkGreen" Margin="76,431,0,0" VerticalAlignment="Top" Width="1188" Height="85"/>
+        <Button x:Name="RedeemButton" Content="Redeemed" HorizontalAlignment="Left" Margin="1090,254,0,0" VerticalAlignment="Top" Width="75" Click="RedeemButton_Click"/>
+        <TextBox x:Name="OrderNumberTextBox" KeyUp="OrderNumberTextBox_KeyUp" HorizontalAlignment="Left" Height="23" Margin="819,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Search order number:" HorizontalAlignment="Left" FontWeight="Bold" Margin="819,32,0,0" VerticalAlignment="Top" Width="158"/>
+        <Label Content="Information:" HorizontalAlignment="Left" FontWeight="Bold" Margin="819,90,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="OrderInfoTextBox" HorizontalAlignment="Left" Height="154" Margin="819,121,0,0" TextWrapping="Wrap" Text="Email... address..." VerticalAlignment="Top" Width="266"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" Margin="1005,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email:" HorizontalAlignment="Left" FontWeight="Bold" Margin="1005,32,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Lock card" x:Name="LockCardCheckBox" IsChecked="false" HorizontalAlignment="Left" Margin="76,310,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Expire fee" x:Name="ExpireFeeCheckBox" IsChecked="True" HorizontalAlignment="Left" Margin="76,331,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.278,-0.075"/>
+        <TextBox HorizontalAlignment="Left" x:Name="CardFeeTextBox" Height="23" Margin="76,383,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Card fee:" HorizontalAlignment="Left" FontWeight="Bold" Margin="76,352,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pending order:"  HorizontalAlignment="Left" FontWeight="Bold" Margin="218,55,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="OkButton" Content="Order ok and packaged" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="479,521,0,0" VerticalAlignment="Top" Width="350" Height="148" Click="OkButton_Click"/>
+        <Label x:Name="CustomerNameLabel" Content="Name: CustomerName" HorizontalAlignment="Left" Margin="218,86,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="StreetLabel" Content="Street: Street 123, Unit" HorizontalAlignment="Left" Margin="218,117,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="CityLabel" Content="City: ZipCode - City" HorizontalAlignment="Left" Margin="218,148,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="CountryLabel" Content="Country: State Nation" HorizontalAlignment="Left" Margin="218,179,0,0" VerticalAlignment="Top"/>
+        <Label Content="Post Information:" HorizontalAlignment="Left" FontWeight="Bold" Margin="479,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PostStampsLabel" Content="Post stamps: A - 17 kr." HorizontalAlignment="Left" Margin="479,86,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Use test settings" x:Name="TestSettingsCheckBox" HorizontalAlignment="Left" IsChecked="true" Margin="244,310,0,0" VerticalAlignment="Top"/>
+        <Label Content="Manual private key:" HorizontalAlignment="Left" FontWeight="Bold" Margin="244,352,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="KeyTextBox" Height="23" Margin="244,384,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="363"/>
+    </Grid>
+</Window>

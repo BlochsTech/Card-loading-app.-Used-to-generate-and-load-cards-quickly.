@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            .bodyBody {
+                margin: 10px;
+                font-size: 1.50em;
+            }
+            .divHeader {
+                text-align: right;
+                border: 1px solid;
+            }
+            .divReturnAddress {
+                text-align: left;
+                float: right;
+				font-size: 17px;
+            }
+            .divSubject {
+                clear: both;
+                font-weight: bold;
+                padding-top: 80px;
+            }
+            .divAdios {
+                float: left;
+                padding-top: 50px;
+            }
+			html{
+				overflow:hidden;
+				font-size: 65%;
+			}
+			img {
+				float: left;
+			}
+			
+        </style>
+    </head>
+    <body class="bodyBody">
+		<img height="180px" src="C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.PrintLibrary\CustomerQR.png"/>
+        <div class="divReturnAddress">
+			BlochsTech<br>
+            Ved Egedam 9, 56<br>
+            Hillerød 3400<br>
+            Denmark<br>
+			DK VAT Nr.: 32889700<br>
+			<br>
+			Phone: +45 61703486<br>
+			Mail: Info@BlochsTech.com<br>
+            <br>
+			Order nr.: <span id="ordernumber">4971203947</span><br>
+			<br>
+            <span id="date">01 December, 2012</span>
+        </div>
+        <div class="divSubject">
+            Congratulations with your new BOBC card!
+        </div>
+
+        <div class="divContents">
+            <p>
+                Dear customer,
+            </p>
+
+            <p>
+                This envelope should contain this letter and your new BOBC card.<br>
+				To <b>get started</b> follow these simple steps:<br><br>
+				
+				1. Send Bitcoin to your card's address: <b><span id="address">1H6ch5oBYcFAFyHbSdLBqUVEMfNBvtSoio</span></b><br><br>
+				
+				2. Remember your Pin code: <b><span id="pin">1234</span></b><br><br>
+				
+				3. That's it! You can now use your card like you would a normal credit <br>
+				card with any Bitcoin merchant that accepts BOBC cards.<br><br>
+				If a merchant does not accept BOBC cards yet, show him the QR code on the<br>
+				front of your card!<br>
+				<br>
+				4. Please keep this letter, we do NOT store any of your critical data for you!<br>
+				(For security reasons)
+            </p>
+			<br>
+			<p>
+                <b>Further reading</b>
+            </p>
+			
+			<p>
+                While the previous section gets you started, there are more things you may wish to<br>
+				know.<br>
+				First of all this is your private key, it has been encrypted using AES:<br>
+				<br>
+				<b><span id="privatekey"></span></b><br>
+				<br>
+				If you loose your card you should import it into a computer based Bitcoin wallet and<br>
+				move your card's funds. Consider making backups of this.<br>
+				<br>
+				If you bought your card on the BlochsTech web site, the password for your encrypted key<br>
+				should be in your email.<br>
+				<br>
+				If you bought this envelope separately send the <b>order number to our email address and<br>
+				we will respond with the password</b>.<br>
+				<b>After we send you the password, we will delete it within 1 month!</b><br>
+				<br>
+				<br>
+				After giving your Pin code, you should remove your card after no more than 5 seconds to<br>
+				avoid potential double charges.<br>
+				<br>
+				Your Pin reset code or Puk code is: <b><span id="puk">12345</span></b><br>
+				Your security will be improved if you use it to change your Pin code once a year.<br>
+				<br>
+				BOBC cards return a check code to the terminal so you can check charge amounts.<br>
+				<br>
+				You can see the table below to understand how to convert values, but an easy way to<br>
+				remember is that the same number in the same position will always give the same cipher<br>
+				character.<br>
+				<br>
+				Your cipher key is: <b><span id="vignerekey">010229</span></b><br>
+				</p><table align="center" cellspacing="0">
+					<tbody><tr style="border:1px solid black">
+						<td style="border:1px solid black">Value v  Key &gt;</td>
+						<td style="border:1px solid black">0</td>
+						<td style="border:1px solid black">1</td>
+						<td style="border:1px solid black">2</td>
+						<td style="border:1px solid black">3</td>
+						<td style="border:1px solid black">4</td>
+						<td style="border:1px solid black">5</td>
+						<td style="border:1px solid black">6</td>
+						<td style="border:1px solid black">7</td>
+						<td style="border:1px solid black">8</td>
+						<td style="border:1px solid black">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">0</td>
+						<td id="x0y0">0</td>
+						<td id="x1y0">1</td>
+						<td id="x2y0">2</td>
+						<td id="x3y0">3</td>
+						<td id="x4y0">4</td>
+						<td id="x5y0">5</td>
+						<td id="x6y0">6</td>
+						<td id="x7y0">7</td>
+						<td id="x8y0">8</td>
+						<td id="x9y0">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">1</td>
+						<td id="x0y1">0</td>
+						<td id="x1y1">1</td>
+						<td id="x2y1">2</td>
+						<td id="x3y1">3</td>
+						<td id="x4y1">4</td>
+						<td id="x5y1">5</td>
+						<td id="x6y1">6</td>
+						<td id="x7y1">7</td>
+						<td id="x8y1">8</td>
+						<td id="x9y1">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">2</td>
+						<td id="x0y2">0</td>
+						<td id="x1y2">1</td>
+						<td id="x2y2">2</td>
+						<td id="x3y2">3</td>
+						<td id="x4y2">4</td>
+						<td id="x5y2">5</td>
+						<td id="x6y2">6</td>
+						<td id="x7y2">7</td>
+						<td id="x8y2">8</td>
+						<td id="x9y2">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">3</td>
+						<td id="x0y3">0</td>
+						<td id="x1y3">1</td>
+						<td id="x2y3">2</td>
+						<td id="x3y3">3</td>
+						<td id="x4y3">4</td>
+						<td id="x5y3">5</td>
+						<td id="x6y3">6</td>
+						<td id="x7y3">7</td>
+						<td id="x8y3">8</td>
+						<td id="x9y3">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">4</td>
+						<td id="x0y4">0</td>
+						<td id="x1y4">1</td>
+						<td id="x2y4">2</td>
+						<td id="x3y4">3</td>
+						<td id="x4y4">4</td>
+						<td id="x5y4">5</td>
+						<td id="x6y4">6</td>
+						<td id="x7y4">7</td>
+						<td id="x8y4">8</td>
+						<td id="x9y4">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">5</td>
+						<td id="x0y5">0</td>
+						<td id="x1y5">1</td>
+						<td id="x2y5">2</td>
+						<td id="x3y5">3</td>
+						<td id="x4y5">4</td>
+						<td id="x5y5">5</td>
+						<td id="x6y5">6</td>
+						<td id="x7y5">7</td>
+						<td id="x8y5">8</td>
+						<td id="x9y5">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">6</td>
+						<td id="x0y6">0</td>
+						<td id="x1y6">1</td>
+						<td id="x2y6">2</td>
+						<td id="x3y6">3</td>
+						<td id="x4y6">4</td>
+						<td id="x5y6">5</td>
+						<td id="x6y6">6</td>
+						<td id="x7y6">7</td>
+						<td id="x8y6">8</td>
+						<td id="x9y6">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">7</td>
+						<td id="x0y7">0</td>
+						<td id="x1y7">1</td>
+						<td id="x2y7">2</td>
+						<td id="x3y7">3</td>
+						<td id="x4y7">4</td>
+						<td id="x5y7">5</td>
+						<td id="x6y7">6</td>
+						<td id="x7y7">7</td>
+						<td id="x8y7">8</td>
+						<td id="x9y7">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">8</td>
+						<td id="x0y8">0</td>
+						<td id="x1y8">1</td>
+						<td id="x2y8">2</td>
+						<td id="x3y8">3</td>
+						<td id="x4y8">4</td>
+						<td id="x5y8">5</td>
+						<td id="x6y8">6</td>
+						<td id="x7y8">7</td>
+						<td id="x8y8">8</td>
+						<td id="x9y8">9</td>
+					</tr>
+					<tr>
+						<td style="border:1px solid black">9</td>
+						<td id="x0y9">0</td>
+						<td id="x1y9">1</td>
+						<td id="x2y9">2</td>
+						<td id="x3y9">3</td>
+						<td id="x4y9">4</td>
+						<td id="x5y9">5</td>
+						<td id="x6y9">6</td>
+						<td id="x7y9">7</td>
+						<td id="x8y9">8</td>
+						<td id="x9y9">9</td>
+					</tr>
+				</tbody></table>
+				<p align="center">Vignere code table.</p><p>
+				Visit our web site if you need more explanation and information at:
+				</p><p align="center"><b>http://blochstech.com/Home/Info</b></p>
+            <p></p>
+        </div>
+
+        <div class="divAdios">
+            Best regards <br>
+            <!-- Space for signature. -->
+            <br>
+            Martin Clemens Bloch<br>
+            BlochsTech
+        </div>
+    
+</body></html>

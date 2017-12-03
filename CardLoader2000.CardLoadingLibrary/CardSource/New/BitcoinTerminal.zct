@@ -1,0 +1,21 @@
+[Card Readers]
+COM1=Auto
+COM2=Auto
+COM3=Auto
+COM4=Auto
+
+[Compiler]
+ExeFile=false
+ImageFile=false
+IncludePath=C:\Users\Martin Clemens Bloch\Dropbox\Hobby stuff\75Branch
+ListingFile=false
+MapFile=false
+SourceFile=BitcoinTerminal.BAS
+
+[Terminal Program]
+ComPort=201
+SaveEEPROM=false
+
+[Window Options]
+IOToolTipEnabled=true
+ShowRegisters=Auto

@@ -1,0 +1,71 @@
+Rem BTCCommands:
+Rem H6C Hxx is system commands all else should be available. T1 Protocol assumed/used.
+Rem I assume the card is initialized first and then these would be called.
+Rem Some timer function would have to unlock the card first to prevent double charging on first time use though.
+Rem Network (Bitcoin/others) 0=Bitcoin network.
+Declare Command &H80 &H00 Network (Returnvalue%)
+Rem Protocol version 0=ZeitControl card-/first-/Realpra- protocol.
+Declare Command &H80 &H01 Protocol (Returnvalue%)
+Rem Get addresses (Syntax?: addr1,addr2....): (Makes it very easy for people in Java/C#)
+Declare Command &H80 &H02 GetAddresses(Returnvalue$)
+Rem Start transaction:
+Rem IDEA: Let merchant decide the miners fee (only) - then vault cards can have zero standard fee + be impossible to use in shops (no vault cards)
+Rem and pocket cards have only our fee as standard
+Declare Command &H80 &H03 RequestPayment(ErrorCode%, RequiresPIN@, AmountMantissa%, AmountExp@, FeeMantissa%, FeeExp@, TerminalMantissa%, TerminalAmountExp@, Decimals@, ReceiverAddressType@, ReceiverAddress as String*20, TerminalReceiverAddressType@, TerminalReceiverAddress as String*20, Returnvalue as String*8)
+Rem Amount (amountExp is signed byte with highest bit = isMinus) and to-address.
+Rem $ is short for String. & long (returns amount*PINCounter).
+Rem Return Syntax: Scientific number: x,yze-99<->999
+Rem Use Vignere cipher to hide result 0-9 mapped to A-I over a field of 1 shifted A-I series.
+Rem (<-- Designed for less than Satoshis. Decimals should be 8 for the foreseeable future.)
+Rem Give PIN code:
+Rem Returns signed TX, are returns in this fashion possible? -> No it should support packets.
+Rem Also: Has to support either DER encoded claim script OR UNENCODED!
+Declare Command &H80 &H04 GivePINGetTx(ErrorCode%, Pin%, EndOfTXStream@, TXBytes as String*245)
+Rem Returns one source known to the card. NextSourceIndex is used by the terminal to specify which is wanted and
+Rem by card to signal no sources left by setting it to the first index 0:
+Declare Command &H80 &H05 GetSources(ErrorCode%, NextSourceIndex@, OutIndex as String*4, TXHash as String*32, Value as String*8, Verified@)
+Rem EndOfTXStream@ set to length of last packet (min 1) if true.
+Declare Command &H80 &H06 GiveTX(ErrorCode%, Accepted@, EndOfTXStream@, TXBytes as String*246)
+Declare Command &H80 &H07 GiveHeader(ErrorCode%, Accepted@, VerifyingTXHash as String*32, Data as String*80)
+Declare Command &H80 &H08 GiveHash(Accepted@, rightNode@, Data as String*32)
+Rem NEEDS COMPLETE REWORK...
+Rem 1. HasSources() -> (0. Starts Process.) DO THIS?
+Rem 2. TX 
+Rem 2. Start chain? Header process? (Process ends at hash == TXHash)
+Rem Re-set func for this kind of thing going wrong? Yes.
+
+Rem Allow parallel procedures? -> NO -> Uses same data = dangerous/not supported.
+Rem Ok, allow interleaving procedures? -> Yes, terminal may be thinking! -> Data corruption? Unnecessary difficulty, DONE.
+
+Declare Command &H80 &H09 DelayUnlockCard(returnvalue%)
+Rem Terminal must call this some number of times after a transaction to enable card function again. Function should take about 1 second.
+Rem use also to clear load state/payment amount?
+
+Rem The maximum amount this card will allow to be charged, higher amounts will be cut.
+Declare Command &H80 &H0A MaxAmount(AmountMantissa%, AmountExp@)
+
+Rem The amount the card has currently been charged and is awaiting PIN for: TODO: NOT ENOUGH! SHOULD BE ALL WAITING INFO
+Declare Command &H80 &H0B WaitingCharge(AmountMantissa%, AmountExp@, FeeMantissa%, FeeExp@, TerminalAmountMantissa%, TerminalAmountExp@, ReceiverAddressType@_
+   , ReceiverAddress as String*20, TerminalReceiverAddressType@, TerminalReceiverAddress as String*20, CardFeeMantissa%, CardFeeExp@, RequiresPIN@, VignereCode as String*8_
+   , IsResetRequest@)
+
+Rem Dumps old source data:
+Declare Command &H80 &H0C DumpTXSources()
+
+Rem Decimals used. For BOBC-0 this will usually be 8.
+Declare Command &H80 &H0D Decimals(ExpextedDecimals%)
+
+Rem Signify data exchange necessity. If false device has own connection and/or much stored data.
+Declare Command &H80 &H0E WantData(WantResponse%)
+
+Declare Command &H80 &H0F MaxSources(MaxResponse%)
+
+Declare Command &H80 &H10 ResetPinCode(ErrorCode%, PukCodeValue&, NewPinCode%)
+
+Declare Command &H80 &HFF Debug(returnvalue$)
+
+Rem TODO: 
+Rem Remove: Declare Command &H20 &H0A TestCommand (returnvalue$)
+Rem Declare Command &H20 &H0B TestSetup (val$)
+Rem TODO:
+Rem Error code + docs for each command 0 = ok, rest we define as we go, 1=Undefined error contact manufacturer, 2 = wrong command order, see docs and so on

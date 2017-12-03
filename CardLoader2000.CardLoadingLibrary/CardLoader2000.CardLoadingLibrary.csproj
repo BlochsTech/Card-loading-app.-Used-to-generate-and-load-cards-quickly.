@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52A3A468-1089-4D3A-A512-0583EA348E99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CardLoader2000.CardLoadingLibrary</RootNamespace>
+    <AssemblyName>CardLoader2000.CardLoadingLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardFileCreator.cs" />
+    <Compile Include="CardLoader.cs" />
+    <Compile Include="CommandHelper.cs" />
+    <Compile Include="Objects\CardFileLocation.cs" />
+    <Compile Include="Objects\CommandOutput.cs" />
+    <Compile Include="Objects\InsertResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardSource\BitcoinCard.zcp" />
+    <None Include="CardSource\BitcoinCard54.zcc" />
+    <None Include="CardSource\BitcoinCard54B.zcc" />
+    <None Include="CardSource\BitcoinCard75.zcc" />
+    <None Include="CardSource\BitcoinCard75.zcp" />
+    <None Include="CardSource\BitcoinTerminal.zct" />
+    <None Include="CardSource\secp256k1.16.bin" />
+    <None Include="CardSource\ZC75_D.zcf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BCLoad.EXE">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CardSource\Bitcoin.BAS" />
+    <Content Include="CardSource\BitcoinCard.BAS" />
+    <Content Include="CardSource\BitcoinTerminal.BAS" />
+    <Content Include="CardSource\BTCCommands.DEF" />
+    <Content Include="CardSource\CardKeys.BAS" />
+    <Content Include="CardSource\CardKeys2.BAS" />
+    <Content Include="CardSource\GeneralEC256.BAS" />
+    <Content Include="CardSource\HugeDiviMultUtil.BAS" />
+    <Content Include="CardSource\HugeIntWrappers.BAS" />
+    <Content Include="CardSource\HugeNumberUtil.BAS" />
+    <Content Include="CardSource\MathUtil.BAS" />
+    <Content Include="CardSource\PurchaseStatistics.BAS" />
+    <Content Include="CardSource\RequestClasses.DEF" />
+    <Content Include="CardSource\RequestHandler.BAS" />
+    <Content Include="CardSource\SetupConstantsTemplate.DEF" />
+    <Content Include="CardSource\TXDataClasses.DEF" />
+    <Content Include="CardSource\TXDataConverter.BAS" />
+    <Content Include="CardSource\TXDataHandler.BAS" />
+    <Content Include="CardSource\TXPaymentCreator.BAS" />
+    <Content Include="CardSource\VignereCipher.BAS" />
+    <Content Include="ZCMBasic.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardLoader2000.CryptoLibrary\CardLoader2000.CryptoLibrary.csproj">
+      <Project>{c7e5e3b8-a024-4df3-b1dc-78e233a25262}</Project>
+      <Name>CardLoader2000.CryptoLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardLoader2000.Interfaces\CardLoader2000.Interfaces.csproj">
+      <Project>{9bc97149-515d-45ee-9946-f20808372686}</Project>
+      <Name>CardLoader2000.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,92 @@
+Rem Network, protocol and other misc. setup constants - all in one file so that it may be copied in from BlochsTech generator.
+
+Rem PIN code and other security.
+Eeprom PIN as Integer = 4446
+Eeprom PUK as Long = 14365
+Const DelayLockSeconds = 6
+Const AverageAmountsMax = 8
+Const WrongCodePunishIncrement = 10
+Rem Note that there is a 1.5X limit per charge. This makes sense even with 0 delay because the card cannot use new sources
+Rem again right away/there is always some processing time.
+Const NoPINAmountsSetting! = 4
+Rem Key for display vignere cipher, the last value is used only to shift the entire alphabet table (must be 7 digits):
+Const DisplayKey = "3119553"
+
+Rem 0 means this smart card is for the original "Bitcoin"-network.
+Const NetworkId = 0
+
+Rem 0 means the BlochsTech Open Bitcoin Card (BOBC-0) protocol is expected. (0-5 reserved for BlochsTech use.)
+Const ProtocolVersion = 0
+
+Rem 0 means SecurePay card is expected, 1 is ZeroPIN card, 2 is Vault card and 3 is OpenSource card. -> No longer valid!!!
+Rem TODO: Re-evaluate this model --> Parametrisize card commands? Mostly the PIN command.
+Rem Const CardType = 0
+
+Rem Address to receive card fee. Paid amount is devided by devisor to yield the fee. (1EMHLYBJuNoLeWZbGJebq4g6yFyqcCem97)
+Const CardFeeHash160Addr$ = Chr$(&H92, &H6f, &H97, &H7c, &H89, &Hef, &H30, &H4b, &He7, &Hd3, &He2, &H7c, &Hd9, &He2, &Hd8, &H94, &H38, &H22, &H66, &H33)
+Rem If this one is set fee is sent here 1/4 of the time instead of the above address:
+Rem 127wEJrjkbScnfA2u2GCSsqiCL3AEbHq3n
+Const AltCardFeeHash160Addr$ = Chr$(&H0c, &H47, &He3, &Hd8, &H21, &H2e, &H11, &H40, &H6f, &Hdb, &H15, &H62, &H88, &H5c, &H0e, &H8c, &H74, &H3c, &H4f, &Ha8)
+Rem ^ Old value ""
+
+Rem After this number of transactions (/10) the fee should go to the alt address.
+Const AltCardFeeAddressCount = 100
+
+Rem Interestingly dust limits mean that a higher fee (0.9% vs. 0.1-2%) that expires is better than a lower that does not.
+Eeprom CardFeeMultiplier! = 0.0
+Rem Equals 0.9 percent.
+Const ExpireUsageTimes = 2
+Rem Equals about one year of normal use.
+Rem In 2007 PBS, the Danish operator of the Dankort system, processed a total of 737 million Dankort transactions. Of these, 4.5 million just on a single day, 21 December. This remains the current record.
+Rem At the end of 2007, there were 3.9 million Dankort in existence.
+Rem 739 / 365.25 / 3.9 = 0.5 purchase per day per card. Source wiki.
+Rem 0 Equals infinite.
+
+Rem Miners fee comes from terminal now!
+
+Const ExpectedDecimals = 8
+Rem Code is ready for "any" decimal amount, constant defines what it IS for this cards lifetime.
+Rem We COULD get this from the terminal, but the current format is uint64 and we have no idea what the future many-digit format will be.
+Rem HOWEVER: We CAN still shape the API so that it is compatible with future formats: Amount is in lowest decimal units (satoshi for 8 decimals) and exp is always positive.
+Rem This will be ignored by this card, but future cards can use same call type/BOBC-0 with 9 decimals for instance.
+
+Rem https://github.com/mastercoin-MSC/spec/issues/50
+Eeprom Readonly DustLimitSatoshis! = 5460
+
+Rem We use satoshi.
+Const InitialAverageAmountSetting! = 20000
+
+Rem Keys and Addresses, now real, controls 0.095BTC:
+Rem Const Addr1 = "14sGUdH8YaYzGwz8WP1oY48rZA68o7X2eS"
+Const Addr1 = "112RKEDqcnycys3tdfWYse6YQ71aa5AoHd"
+
+Rem 14s...old
+
+Rem 15w... old2
+
+Const Key1 = Chr$(&H57, &H00, &Hff, &H6e, &Hda, &H22, &Hea, &H4e, &Hff, &H64, &Hd0, &H72, &H9a, &H01, &Ha5, &Hd8, &H5f, &H5a, &Hd3, &H0d, &Hc4, &H82, &H2f, &H6f, &H3b, &Hb2, &Hd0, &H30, &Hb4, &H8b, &Hc7, &He0)
+
+Rem 15w...-pubkey:   
+Rem Ver BS: 04
+Rem X: 05 60 D8 5E 16 6E 9C AF A1 0E 69 AB 51 D9 F7 8C 76 77 
+Rem    23 BF 2E 8F FB 21 BA 9F 7B 1B 6F 36 C8 6E
+Rem Y: 77 29 85 24 B1 39 C2 A7 1D EB F8 E5 FF 3F FC B3 17 8F
+Rem    7F D7 A7 2E 0B A8 5B B6 2C EC 86 42 07 A9
+
+Rem 05 60 D8 5E 16 6E 9C AF
+Rem A1 0E 69 AB 51 D9 F7 8C
+Rem 76 77 23 BF 2E 8F FB 21
+Rem BA 9F 7B 1B 6F 36 C8 6E
+
+Rem 77 29 85 24 B1 39 C2 A7
+Rem 1D EB F8 E5 FF 3F FC B3
+Rem 17 8F 7F D7 A7 2E 0B A8 
+Rem 5B B6 2C EC 86 42 07 A9
+
+Const PubKey1 = Chr$(&He9, &Hc4, &Hc6, &Had, &H2b, &He6, &Hd9, &H7b, &Hd4, &Hbb, &Hba, &H18, &Hfc, &H51, &He6, &H2a, &H0b, &H4b, &H39, &H37, &H35, &Hfb, &H8c, &H0f, &Hb8, &H59, &H25, &H3a, &Haf, &H44, &H27, &H78, &H9c, &He6, &Hd4, &Hd1, &Hb6, &H53, &Hc2, &H9d, &H67, &Hb9, &H9e, &H9d, &Hcc, &Ha1, &Hfb, &Hfa, &Hf1, &Hab, &H86, &Hae, &Hbe, &H50, &Hb5, &Hb2, &H77, &Hec, &Hd8, &Hba, &H8d, &Hbc, &Hac, &H65)
+
+Eeprom ReadOnly Hash160KeyArray(0 To 0) as String*20 = Chr$(&H00, &H44, &Hb6, &H66, &H2b, &H97, &H25, &H25, &Hf7, &Hfb, &H6c, &H2b, &H40, &Hd5, &H1a, &Ha4, &Hcb, &H56, &Hbc, &H5d)
+                  
+                  Rem ,Chr$(&HE0,&H00,&H00,&H00,&H00,&H00,&H00,&H00,_
+                  Rem &H00,&H00,&H00,&H00,&H00,&H00,&H00,&H00,_
+                  Rem &H00,&H00,&H00,&H00)_

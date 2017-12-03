@@ -1,0 +1,57 @@
+Type TXChargeData
+   Rem 64 bit integer of satoshis, same used in BTC protocol.
+   Amount as String*8
+   Rem Order: Payment (, CardFee) (, TerminalFee) (, MinersFee) , LeftOver1 (, LeftOver2)
+   ChargeType as Byte
+End Type
+
+Type TXSourceIdInfo
+   Rem 32 byte double SHA256 hash of of the TX containing the output to be claimed:
+   TXHash as String*32
+   Rem 4 byte Int32 with the index of the output of the referenced TX.
+   TXIndex as String*4
+End Type
+
+Rem Custom type for containing validated info needed for using it as a TXIN in a new TX:
+Rem The hash and the index together gives a unique identification that can be used to prevent double spening too much.
+Rem What should be validated is: difficulty of forging TXHash block header and publicKey/claim script fits.
+Type TXSource
+   Rem Value of transaction as 8 byte Int64
+   Amount as String*8
+   Rem 32 byte double SHA256 hash of of the TX containing the output to be claimed:
+   TXHash as String*32
+   Rem 4 byte Int32 with the index of the output of the referenced TX.
+   TXIndex as String*4
+   Rem Hash verified:
+   Verified as Byte
+   Rem Accepted script is always the same, Hash160 index here:
+   AddressIndex as Byte
+   Rem Note we allow TXs to be returned without DER encoding, this is done later. Claim script is (R,S) and publickey only.
+End Type
+
+Type TXOut
+   Rem Source from output, empty fields if invalid or similar:
+   Source as TXSource
+   Rem Length of the TXOut data structure:
+   ByteSize as Integer
+   Rem Is valid bool, 0-1:
+   IsValid as Byte   
+End Type
+
+REM TODO: unit32, var_int, tx_out, tx_in, TX
+Type VarInt
+   ByteSize as Byte
+   Value as String*8
+   NumberValue as Long
+End Type
+
+Type TXIn
+   ByteSize as Integer
+End Type
+
+Type Outpoint
+   TXHash as String*32
+   Index as Long
+End Type
+
+#Include TXDataConverter.BAS

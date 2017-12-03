@@ -1,0 +1,15 @@
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.WebAdapter\bin\Debug\CardLoader2000.WebAdapter.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.WebAdapter\bin\Debug\CardLoader2000.WebAdapter.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.WebAdapter\obj\Debug\CardLoader2000.WebAdapter.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.WebAdapter\obj\Debug\CardLoader2000.WebAdapter.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.WebAdapter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.WebAdapter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000.WebAdapter\obj\Debug\CardLoader2000.WebAdapter.csprojResolveAssemblyReference.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.WebAdapter\bin\Debug\CardLoader2000.WebAdapter.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.WebAdapter\bin\Debug\CardLoader2000.WebAdapter.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.WebAdapter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.WebAdapter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.WebAdapter\obj\Debug\CardLoader2000.WebAdapter.csprojResolveAssemblyReference.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.WebAdapter\obj\Debug\CardLoader2000.WebAdapter.csproj.CoreCompileInputs.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.WebAdapter\obj\Debug\CardLoader2000.WebAdapter.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000.WebAdapter\obj\Debug\CardLoader2000.WebAdapter.pdb

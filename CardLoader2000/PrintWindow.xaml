@@ -1,0 +1,11 @@
+﻿<Window x:Class="CardLoader2000.PrintWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:osm="http://schemas.awesomium.com/winfx"
+        Title="PrintWindow" Height="1139" Width="820">
+    <Grid x:Name="grid">
+        <!--The alignment and size of the webbrowser is reflected in the print. If larger than document
+        it will be cut. The width here corresponds to A4 paper width with a little margin-->
+        <WebBrowser x:Name="webBrowser" Height="1089" Width="770" VerticalAlignment="Top" Margin="0,10,0,0"/>
+    </Grid>
+</Window>

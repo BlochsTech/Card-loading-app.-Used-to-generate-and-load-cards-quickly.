@@ -1,0 +1,9 @@
+[Window Options]
+IOToolTipEnabled=true
+ShowRegisters=Auto
+
+[ZCC]
+0=[x]BitcoinCard75.zcc
+
+[ZCT]
+0=[x]BitcoinTerminal.zct

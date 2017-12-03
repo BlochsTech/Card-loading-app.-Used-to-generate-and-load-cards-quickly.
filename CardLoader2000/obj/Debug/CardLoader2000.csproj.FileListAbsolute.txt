@@ -1,0 +1,76 @@
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.exe.config
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.exe
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.ViewModels.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.ViewModels.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\CardLoader2000.csprojResolveAssemblyReference.cache
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\MainWindow.baml
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\MainWindow.g.cs
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\App.g.cs
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\CardLoader2000_MarkupCompile.cache
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\CardLoader2000.g.resources
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\CardLoader2000.Properties.Resources.resources
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\CardLoader2000.csproj.GenerateResource.Cache
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\CardLoader2000.exe
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\CardLoader2000.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.Interfaces.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.LoadProcessors.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.Interfaces.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.LoadProcessors.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.PrintLibrary.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.PrintLibrary.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\PrintWindow.baml
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\obj\Debug\PrintWindow.g.cs
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.CryptoLibrary.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.CryptoLibrary.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.DAL.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.DAL.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.WebAdapter.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.WebAdapter.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.CardLoadingLibrary.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\CardLoader2000.CardLoadingLibrary.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\Gma.QrCodeNet.Encoding.Net45.dll
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\Gma.QrCodeNet.Encoding.Net45.pdb
+C:\Users\mcb\Dropbox\Hobby stuff\Card loader 2000\CardLoader2000\CardLoader2000\bin\Debug\Gma.QrCodeNet.Encoding.Net45.xml
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\BCLoad.EXE
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.exe.config
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.exe
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.Interfaces.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.PrintLibrary.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.ViewModels.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.DAL.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\Gma.QrCodeNet.Encoding.Net45.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.LoadProcessors.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.WebAdapter.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.CryptoLibrary.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.CardLoadingLibrary.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.Interfaces.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.PrintLibrary.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.ViewModels.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.DAL.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\Gma.QrCodeNet.Encoding.Net45.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\Gma.QrCodeNet.Encoding.Net45.xml
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.LoadProcessors.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.WebAdapter.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.CryptoLibrary.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\bin\Debug\CardLoader2000.CardLoadingLibrary.pdb
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\CardLoader2000.csprojResolveAssemblyReference.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\MainWindow.baml
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\PrintWindow.baml
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\MainWindow.g.cs
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\PrintWindow.g.cs
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\App.g.cs
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\CardLoader2000_MarkupCompile.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\CardLoader2000.g.resources
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\CardLoader2000.Properties.Resources.resources
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\CardLoader2000.csproj.GenerateResource.Cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\CardLoader2000.csproj.CoreCompileInputs.cache
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\CardLoader2000.exe
+C:\Users\Martin Clemens Bloch\Documents\GitHub\CardLoadingApp\CardLoader2000\obj\Debug\CardLoader2000.pdb

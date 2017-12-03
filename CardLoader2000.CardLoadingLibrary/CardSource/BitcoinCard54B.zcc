@@ -1,0 +1,16 @@
+[BasicCard]
+ConfigFile=Pro\ZC54_M.zcf
+
+[Card Reader]
+PhysicalReader=100
+VirtualReader=201
+
+[Compiler]
+ImageFile=false
+ListingFile=false
+MapFile=false
+SourceFile=Main.BAS
+
+[Window Options]
+IOToolTipEnabled=true
+ShowRegisters=Auto
